@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: infra/Dockerfile.backend.arm64
+    container_name: nanosensei-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app/backend
+      - nanosensei-db:/app/data
+    environment:
+      - ENV=development
+    restart: unless-stopped
+
+volumes:
+  nanosensei-db:
+
