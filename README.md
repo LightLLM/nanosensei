@@ -58,15 +58,23 @@ The backend will be available at `http://localhost:8000`
 
 API docs: `http://localhost:8000/docs`
 
-### 2. Run Mobile App
+### 2. Run Frontend
 
+**Option A: Mobile App (React Native)**
 ```bash
 cd mobile
 npm install
 npx expo start
 ```
-
 Scan the QR code with Expo Go app on your phone, or press `a` for Android emulator / `i` for iOS simulator.
+
+**Option B: Web App (Next.js)**
+```bash
+cd web
+npm install
+npm run dev
+```
+The web app will be available at `http://localhost:3000`
 
 **Note:** Update `mobile/src/api/BackendClient.ts` to point to your backend URL (default: `http://localhost:8000` for local dev, or your EC2 IP for production).
 
@@ -80,6 +88,13 @@ nanosensei/
 │   │   ├── api/        # Backend API client
 │   │   ├── screens/    # App screens
 │   │   └── navigation/ # Navigation setup
+│   └── README.md
+├── web/                 # Next.js web frontend
+│   ├── app/            # Next.js app directory
+│   │   ├── page.tsx    # Home page
+│   │   ├── session/    # Session pages
+│   │   └── progress/    # Progress page
+│   ├── lib/            # API client and utilities
 │   └── README.md
 ├── backend/            # FastAPI backend
 │   ├── app/
