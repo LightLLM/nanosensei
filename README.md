@@ -1,5 +1,8 @@
 # 🔥 NanoSensei – On-Device AI Skill Coach
 
+[![CI](https://github.com/YOUR_USERNAME/nanosensei/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/nanosensei/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 **NanoSensei** is an on-device AI skill coach designed for Arm-based mobile devices. The app uses your phone's camera to analyze your performance and provide real-time coaching feedback. The backend runs on **AWS Graviton (arm64)** for optimal performance and cost efficiency.
 
 ## 🎯 Project Overview
